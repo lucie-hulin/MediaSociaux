@@ -1,10 +1,17 @@
 function afficher(){
-var saisie =document.getElementById("texte1").value;
-document.getElementById("texte2").value=saisie ;
+    var saisie =document.getElementById("texte1").value;
+    document.getElementById("texte2").value=saisie ;
+    loadInsta(saisie);
 }
 
-function loadInsta(string nom) : Observable<any>{
-      return this.http.get<any>("https://www.instagram.com/web/search/topsearch/?context=blended&query="+ nom);
-  console.log("https://www.instagram.com/web/search/topsearch/?context=blended&query="+ nom);
+function loadInsta(nomStar) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://www.instagram.com/web/search/topsearch/?context=blended&query='+nomStar);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            var reponse = JSON.parse(xhr.responseText);
+            console.log(reponse);
+        }
+    };
+    xhr.send();
 }
-
