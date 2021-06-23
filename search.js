@@ -120,19 +120,19 @@ function loadInstatemps() {
             document.getElementById("post2").value=post2date ;
             var post3 = temps[2];
             var date = new Date(post3);
-            var post2date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            var post3date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             document.getElementById("post3").value=post3date ;
             var post4 = temps[3];
             var date = new Date(post4);
-            var post2date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            var post4date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             document.getElementById("post4").value=post4date ;
             var post5 = temps[4];
             var date = new Date(post5);
-            var post2date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            var post5date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             document.getElementById("post5").value=post5date ;
             var post6 = temps[5];
             var date = new Date(post6);
-            var post2date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            var post6date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             document.getElementById("post6").value=post6date ;
         }
     };
