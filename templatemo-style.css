@@ -893,49 +893,5 @@ input:focus::-moz-placeholder {
                                    padding-left: 10px;
                                }
 
-#button-submit{
-    background: url(http://4.bp.blogspot.com/-slkXXLUcxqg/VEQI-sJKfZI/AAAAAAAAAlA/9UtEyStfDHw/s1600/slider-arrow-right.png) no-repeat;
-    margin-left: -40px;
-    border-width: 0px;
-    width: 43px;
-    height: 45px;
-}
 
-    body {
-        font-family:'Source Sans Pro', sans-serif;
-    }
-
-    .table {
-        width:100%;
-        border:1px solid
-    }
-
-    .table-header {
-        display:flex;
-        width:100%;
-        background:#000;
-
-    }
-
-    .table-row {
-        display:flex;
-        width:100%;
-        padding: 0;
-    }
-
-    .table-data, .header__item {
-        flex: 1 1 20%;
-        text-align:center;
-    }
-
-    .header__item {
-        text-transform:uppercase;
-    }
-
-    .filter__link {
-        color:white;
-        text-decoration: none;
-        position:relative;
-        display:inline-block;
-    }
-
+   
