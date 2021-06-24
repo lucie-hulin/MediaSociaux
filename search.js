@@ -1,12 +1,16 @@
 
+let tokenpartage ="" ;
+
+
+
 function connecter(){
-    var token =document.getElementById("token").value;
+    var tokenpartage =document.getElementById("token").value;
     window.location.href='https://lucie-hulin.github.io/MediasSociaux/accueil.html';
-    console.log(token);
-    loadInstaCaption(token);
-    loadInstaUsername(token);
-    loadInstaMedia(token);
-    loadInstatemps(token);
+    console.log(tokenpartage);
+    loadInstaCaption(tokenpartage);
+    loadInstaUsername(tokenpartage);
+    loadInstaMedia(tokenpartage);
+    loadInstatemps(tokenpartage);
 }
 
 
