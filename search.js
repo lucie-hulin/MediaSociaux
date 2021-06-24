@@ -5,7 +5,7 @@ let tokenpartage ="" ;
 
 function connecter(){
     var tokenpartage =document.getElementById("token").value;
-    window.location.href='https://lucie-hulin.github.io/MediasSociaux/accueil.html';
+    document.location.href = 'https://lucie-hulin.github.io/MediasSociaux/accueil.html';
     console.log(tokenpartage);
     /*loadInstaCaption(tokenpartage);
     loadInstaUsername(tokenpartage);
