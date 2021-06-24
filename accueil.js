@@ -1,12 +1,12 @@
 
-var search = require('./search.js');
+/*var search = require('./search.js');
 var tokenpartage =search.tokenpartage;
 
 console.log(tokenpartage);
     loadInstaCaption(tokenpartage);
     loadInstaUsername(tokenpartage);
     loadInstaMedia(tokenpartage);
-    loadInstatemps(tokenpartage);
+    loadInstatemps(tokenpartage);*/
 
 
 /*function loadInsta() {
