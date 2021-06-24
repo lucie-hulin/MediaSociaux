@@ -1,4 +1,7 @@
- console.log(tokenpartage);
+
+
+
+console.log(tokenpartage);
     loadInstaCaption(tokenpartage);
     loadInstaUsername(tokenpartage);
     loadInstaMedia(tokenpartage);
