@@ -7,10 +7,10 @@ function connecter(){
     var tokenpartage =document.getElementById("token").value;
     window.location.href='https://lucie-hulin.github.io/MediasSociaux/accueil.html';
     console.log(tokenpartage);
-    loadInstaCaption(tokenpartage);
+    /*loadInstaCaption(tokenpartage);
     loadInstaUsername(tokenpartage);
     loadInstaMedia(tokenpartage);
-    loadInstatemps(tokenpartage);
+    loadInstatemps(tokenpartage);*/
 }
 
 
