@@ -45,9 +45,10 @@ function loadInstaCaption(token) {
             for (var i=0; i< reponse.data.length; i++)
             {
                 caption.push(reponse.data[i].caption);
+                document.getElementById("caption"+i).value=caption[i] ;
             }
             console.log(caption);
-            document.getElementById("caption").value=caption ;
+            /*document.getElementById("caption").value=caption ;
             document.getElementById("caption1").value=caption[0] ;
             document.getElementById("caption2").value=caption[1] ;
             document.getElementById("caption3").value=caption[2] ;
@@ -57,7 +58,7 @@ function loadInstaCaption(token) {
             document.getElementById("caption7").value=caption[6] ;
             document.getElementById("caption8").value=caption[7] ;
             document.getElementById("caption9").value=caption[8] ;
-            document.getElementById("caption10").value=caption[9] ;
+            document.getElementById("caption10").value=caption[9] ;*/
         }
     };
     xhr.send();
