@@ -1,10 +1,8 @@
-
-
- console.log(token);
-    loadInstaCaption(token);
-    loadInstaUsername(token);
-    loadInstaMedia(token);
-    loadInstatemps(token);
+ console.log(tokenpartage);
+    loadInstaCaption(tokenpartage);
+    loadInstaUsername(tokenpartage);
+    loadInstaMedia(tokenpartage);
+    loadInstatemps(tokenpartage);
 
 
 /*function loadInsta() {
