@@ -1,5 +1,5 @@
 
-var add = require('search.js').tokenpartage;
+var tokenpartage = require('search.js').tokenpartage;
 
 
 console.log(tokenpartage);
