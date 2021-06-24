@@ -1,6 +1,6 @@
 
-var tokenpartage = require('search.js').tokenpartage;
-
+var search = require('./search.js');
+var tokenpartage =search.tokenpartage;
 
 console.log(tokenpartage);
     loadInstaCaption(tokenpartage);
