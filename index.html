@@ -12,6 +12,7 @@
 </head>
 <body>
 
+
 <div class="container">
     <!-- Top box -->
     <!-- Logo & Site Name -->
@@ -22,7 +23,7 @@
                     <div class="col-md-6 col-12">
                         <img src="logo.png" alt="Logo" class="tm-site-logo" />
                         <div class="tm-site-text-box">
-                            <h2>Bienvenue dans votre dashboard <output type="text" id="user" size="30" value=""></output></h2>
+                            <h2>Bienvenue sur la page dashboard : connectez vous !</output></h2>
                             <h6 class="tm-site-description">Toutes vos données Instagram en condensées</h6>
                         </div>
                     </div>
@@ -33,73 +34,12 @@
 
     <main>
         <header class="row tm-welcome-section">
-            <h2 class="col-12 text-center tm-section-title">Vous avez posté votre dernier post Instragram <output type="text" id="last" size="30" value=""></output> </h2>
-            <p class="col-12 text-center">Il va falloir s'y remettre pour être une star...</p>
-            <output type="text" id="caption" size="30" value="">
+            <h2 class="col-12 text-center tm-section-title">Mettez votre token :</output> </h2>
+            <form>
+                <input type="text" id="token"  value="" size="30"><br>
+                <input type="button" id="bouton" value="Afficher" size="30" onclick="connecter()"><br><br>
+            </form>
         </header>
-        <div class="tm-paging-links">
-        </div>
-        <p class="col-12 tm-section-title"> Vos posts en détails:</p>
-        <div class="row tm-gallery">
-            <!-- gallery page 1 -->
-            <div id="tm-gallery-page-pizza" class="tm-gallery-page">
-                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                    <figure>
-                        <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.29350-15/160389975_1095819357557360_7513678445947543649_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=BVos2vF-Kd4AX9TAPIj&_nc_ht=scontent-mrs2-1.cdninstagram.com&oh=0c140e0138116cf42847378e50b3778f&oe=60D7AC3C" alt="Image" class="img-fluid tm-gallery-img" />
-                        <figcaption>
-                            <h4 class="tm-gallery-title"><output type="text" id="caption1" size="30" value=""></output></h4>
-                            <p class="tm-gallery-description"><output type="text" id="lastagain" size="30" value=""></output> </p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                    <figure>
-                        <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/100766780_1151180188576549_7219263287118798697_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=koGVPV_GQX0AX9Xti_Y&_nc_ht=scontent-mrs2-1.cdninstagram.com&oh=1b1dbe8d4e8204d36ab643d3324a5b7a&oe=60D8E8F7"
-                        alt="Image" class="img-fluid tm-gallery-img" />
-                        <figcaption>
-                            <h4 class="tm-gallery-title"><output type="text" id="caption2" size="30" value=""></output></h4>
-                            <p class="tm-gallery-description"><output type="text" id="post2" size="30" value=""></output> </p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                    <figure>
-                        <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/89003097_511708376182190_3749461189350395610_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=rNKTeWpl-7QAX-uIVdj&_nc_ht=scontent-mrs2-1.cdninstagram.com&oh=a85f0cab9548598d778f99f9987e63fc&oe=60D8188F" alt="Image" class="img-fluid tm-gallery-img" />
-                        <figcaption>
-                            <h4 class="tm-gallery-title"><output type="text" id="caption3" size="30" value=""></output></h4>
-                            <p class="tm-gallery-description"><output type="text" id="post3" size="30" value=""></output> </p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                    <figure>
-                        <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/43014925_429941640868248_8339816357838333055_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=m_vMpw4KIJQAX_TQetI&_nc_ht=scontent-mrs2-1.cdninstagram.com&oh=78f6a21bd20abc5d6136cfc707a1c57a&oe=60D8C801" alt="Image" class="img-fluid tm-gallery-img" />
-                        <figcaption>
-                            <h4 class="tm-gallery-title"><output type="text" id="caption4" size="30" value=""></output></h4>
-                            <p class="tm-gallery-description"><output type="text" id="post4" size="30" value=""></output> </p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                    <figure>
-                        <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/37759671_1083525091794973_8750489046574170112_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=ZG58POshtgAAX-K63u_&_nc_ht=scontent-mrs2-1.cdninstagram.com&oh=45c764afd7bb61458d6e4a1ce3a39f27&oe=60D8C3A5"" alt="Image" class="img-fluid tm-gallery-img" />
-                        <figcaption>
-                            <h4 class="tm-gallery-title"><output type="text" id="caption5" size="30" value=""></output></h4>
-                            <p class="tm-gallery-description"><output type="text" id="post5" size="30" value=""></output> </p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                    <figure>
-                        <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/36791344_1004852713007368_3961562144591314944_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=o20TRiaepYYAX_J9o4F&_nc_ht=scontent-mrs2-2.cdninstagram.com&oh=d329d44e62f54efdf362318c03b44309&oe=60D7C6F3" alt="Image" class="img-fluid tm-gallery-img" />
-                        <figcaption>
-                            <h4 class="tm-gallery-title"><output type="text" id="caption6" size="30" value=""></output></h4>
-                            <p class="tm-gallery-description"><output type="text" id="post6" size="30" value=""></output> </p>
-                        </figcaption>
-                    </figure>
-                </article>
-            </div> <!-- gallery page 1 -->
-        </div>
     </main>
 
     <footer class="tm-footer text-center">
