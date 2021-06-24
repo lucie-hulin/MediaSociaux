@@ -6,7 +6,7 @@ console.log(tokenpartage);
     loadInstaCaption(tokenpartage);
     loadInstaUsername(tokenpartage);
     loadInstaMedia(tokenpartage);
-    loadInstatemps(tokenpartage);*/
+    loadInstatemps(tokenpartage);
 
 
 /*function loadInsta() {
@@ -58,7 +58,7 @@ function loadInstaCaption(token) {
             document.getElementById("caption7").value=caption[6] ;
             document.getElementById("caption8").value=caption[7] ;
             document.getElementById("caption9").value=caption[8] ;
-            document.getElementById("caption10").value=caption[9] ;*/
+            document.getElementById("caption10").value=caption[9] ;
         }
     };
     xhr.send();
@@ -191,3 +191,4 @@ function loadInstatemps(token) {
     };
     xhr.send();
 }
+*/
