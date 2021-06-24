@@ -1,10 +1,15 @@
-loadInsta();
-loadInstaCaption();
-loadInstaUsername();
-loadInstaMedia();
-loadInstatemps();
 
-function loadInsta() {
+function connecter(){
+    var token =document.getElementById("token").value;
+
+    loadInstaCaption(token);
+    loadInstaUsername(token);
+    loadInstaMedia(token);
+    loadInstatemps(token);
+}
+
+
+/*function loadInsta() {
     localStorage.clear()
     var xhr = new XMLHttpRequest();
     let caption = [];
@@ -20,22 +25,19 @@ function loadInsta() {
                 url.push(reponse.data[i].media_url);
                 tps.push(reponse.data[i].timestamp);
             }
-            console.log(caption);
             document.getElementById("caption").value=caption ;
             document.getElementById("caption1").value=caption[0] ;
-            console.log(url);
-            console.log(tps);
         }
     };
     xhr.send();
 
-}
+}*/
 
-function loadInstaCaption() {
+function loadInstaCaption(token) {
     localStorage.clear();
     var caption = [];
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=caption&access_token=IGQVJVbVFsYnF1cDZA3VG5Yc3N6R2pZATnVHNk9WM00wUGY0YlNESUVsVXZAjamI4R05VY0pxdWY2eWN6bElNR0liVGxHcTdsWGI3ZAWxUOUZA5alc2ZAjh3T25lN3Y4NFBwVTljVUQ0RFZAR'
+    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=caption&access_token='+token
     );
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
@@ -52,16 +54,20 @@ function loadInstaCaption() {
             document.getElementById("caption4").value=caption[3] ;
             document.getElementById("caption5").value=caption[4] ;
             document.getElementById("caption6").value=caption[5] ;
+            document.getElementById("caption7").value=caption[6] ;
+            document.getElementById("caption8").value=caption[7] ;
+            document.getElementById("caption9").value=caption[8] ;
+            document.getElementById("caption10").value=caption[9] ;
         }
     };
     xhr.send();
 }
 
-function loadInstaUsername() {
+function loadInstaUsername(token) {
     localStorage.clear();
     var username ;
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=username&access_token=IGQVJVbVFsYnF1cDZA3VG5Yc3N6R2pZATnVHNk9WM00wUGY0YlNESUVsVXZAjamI4R05VY0pxdWY2eWN6bElNR0liVGxHcTdsWGI3ZAWxUOUZA5alc2ZAjh3T25lN3Y4NFBwVTljVUQ0RFZAR'
+    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=username&access_token='+token
     );
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
@@ -75,11 +81,11 @@ function loadInstaUsername() {
 }
 
 
-function loadInstaMedia() {
+function loadInstaMedia(token) {
     localStorage.clear();
     var mediaurl = [] ;
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=media_url&access_token=IGQVJVbVFsYnF1cDZA3VG5Yc3N6R2pZATnVHNk9WM00wUGY0YlNESUVsVXZAjamI4R05VY0pxdWY2eWN6bElNR0liVGxHcTdsWGI3ZAWxUOUZA5alc2ZAjh3T25lN3Y4NFBwVTljVUQ0RFZAR'
+    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=media_url&access_token='+token
     );
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
@@ -89,16 +95,46 @@ function loadInstaMedia() {
                 mediaurl.push(reponse.data[i].media_url);
             }
             console.log(mediaurl);
+            let image1 = document.getElementById("url1") ;
+            let source1 = image1.getAttribute('src');
+            image1.setAttribute('src', mediaurl[0]);
+            let image2 = document.getElementById("url2") ;
+            let source2 = image2.getAttribute('src');
+            image2.setAttribute('src', mediaurl[1]);
+            let image3 = document.getElementById("url3") ;
+            let source3 = image3.getAttribute('src');
+            image3.setAttribute('src', mediaurl[2]);
+            let image4 = document.getElementById("url4") ;
+            let source4 = image4.getAttribute('src');
+            image4.setAttribute('src', mediaurl[3]);
+            let image5 = document.getElementById("url5") ;
+            let source5 = image5.getAttribute('src');
+            image5.setAttribute('src', mediaurl[4]);
+            let image6 = document.getElementById("url6") ;
+            let source6 = image6.getAttribute('src');
+            image6.setAttribute('src', mediaurl[5]);
+            let image7 = document.getElementById("url7") ;
+            let source7 = image7.getAttribute('src');
+            image7.setAttribute('src', mediaurl[6]);
+            let image8 = document.getElementById("url8") ;
+            let source8 = image8.getAttribute('src');
+            image8.setAttribute('src', mediaurl[7]);
+            let image9 = document.getElementById("url9") ;
+            let source9 = image9.getAttribute('src');
+            image9.setAttribute('src', mediaurl[8]);
+            let image10 = document.getElementById("url10") ;
+            let source10 = image10.getAttribute('src');
+            image10.setAttribute('src', mediaurl[9]);
         }
     };
     xhr.send();
 }
 
-function loadInstatemps() {
+function loadInstatemps(token) {
     localStorage.clear();
     var temps = [] ;
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=timestamp&access_token=IGQVJVbVFsYnF1cDZA3VG5Yc3N6R2pZATnVHNk9WM00wUGY0YlNESUVsVXZAjamI4R05VY0pxdWY2eWN6bElNR0liVGxHcTdsWGI3ZAWxUOUZA5alc2ZAjh3T25lN3Y4NFBwVTljVUQ0RFZAR'
+    xhr.open('GET', 'https://graph.instagram.com/me/media?fields=timestamp&access_token='+token
     );
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
@@ -134,77 +170,28 @@ function loadInstatemps() {
             var date = new Date(post6);
             var post6date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             document.getElementById("post6").value=post6date ;
+            var post7 = temps[6];
+            var date = new Date(post7);
+            var post7date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            document.getElementById("post6").value=post7date ;
+            var post8 = temps[7];
+            var date = new Date(post8);
+            var post8date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            document.getElementById("post8").value=post8date ;
+            var post9 = temps[8];
+            var date = new Date(post9);
+            var post4date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            document.getElementById("post9").value=post9date ;
+            var post10 = temps[9];
+            var date = new Date(post10);
+            var post10date = `le ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} à ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            document.getElementById("post10").value=post10date ;
         }
     };
     xhr.send();
 }
 
-var properties = [
-    'name',
-    'wins',
-    'draws',
-    'losses',
-    'total',
-];
 
-$.each( properties, function( i, val ) {
 
-    var orderClass = '';
 
-    $("#" + val).click(function(e){
-        e.preventDefault();
-        $('.filter__link.filter__link--active').not(this).removeClass('filter__link--active');
-        $(this).toggleClass('filter__link--active');
-        $('.filter__link').removeClass('asc desc');
-
-        if(orderClass == 'desc' || orderClass == '') {
-            $(this).addClass('asc');
-            orderClass = 'asc';
-        } else {
-            $(this).addClass('desc');
-            orderClass = 'desc';
-        }
-
-        var parent = $(this).closest('.header__item');
-        var index = $(".header__item").index(parent);
-        var $table = $('.table-content');
-        var rows = $table.find('.table-row').get();
-        var isSelected = $(this).hasClass('filter__link--active');
-        var isNumber = $(this).hasClass('filter__link--number');
-
-        rows.sort(function(a, b){
-
-            var x = $(a).find('.table-data').eq(index).text();
-            var y = $(b).find('.table-data').eq(index).text();
-
-            if(isNumber == true) {
-
-                if(isSelected) {
-                    return x - y;
-                } else {
-                    return y - x;
-                }
-
-            } else {
-
-                if(isSelected) {
-                    if(x < y) return -1;
-                    if(x > y) return 1;
-                    return 0;
-                } else {
-                    if(x > y) return -1;
-                    if(x < y) return 1;
-                    return 0;
-                }
-            }
-        });
-
-        $.each(rows, function(index,row) {
-            $table.append(row);
-        });
-
-        return false;
-    });
-
-});
 
