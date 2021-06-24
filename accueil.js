@@ -31,7 +31,7 @@ console.log(tokenpartage);
     };
     xhr.send();
 
-}*/
+}
 
 function loadInstaCaption(token) {
     localStorage.clear();
