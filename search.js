@@ -1,10 +1,6 @@
 
-let tokenpartage ="" ;
-
-
-
 function connecter(){
-    tokenpartage =document.getElementById("token").value;
+    let tokenpartage =document.getElementById("token").value;
     document.location.href = 'https://lucie-hulin.github.io/MediasSociaux/accueil.html';
     console.log(tokenpartage);
     loadInstaCaption(tokenpartage);
