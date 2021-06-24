@@ -2,6 +2,7 @@
 function connecter(){
     var token =document.getElementById("token").value;
     window.location.href='https://lucie-hulin.github.io/MediasSociaux/accueil.html';
+    console.log(token);
     loadInstaCaption(token);
     loadInstaUsername(token);
     loadInstaMedia(token);
