@@ -1,5 +1,6 @@
 
 function connecter(){
+    document.location.href = 'https://lucie-hulin.github.io/MediasSociaux/accueil.html';
     var token =document.getElementById("token").value;
 console.log(token);
     loadInstaCaption(token);
