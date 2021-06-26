@@ -1,22 +1,20 @@
 
-/*var search = require('./search.js');
-var tokenpartage =search.tokenpartage;
+let token = localStorage.token;
+console.log(token);
 
-console.log(tokenpartage);
-    loadInstaCaption(tokenpartage);
-    loadInstaUsername(tokenpartage);
-    loadInstaMedia(tokenpartage);
-    loadInstatemps(tokenpartage);
+loadInstaCaption(token);
+loadInstaUsername(token);
+loadInstaMedia(token);
+loadInstatemps(token);
 
-
-/*function loadInsta() {
+function loadInsta() {
     localStorage.clear()
     var xhr = new XMLHttpRequest();
     let caption = [];
     let url = [];
     let tps = [];
     xhr.open('GET', 'https://graph.instagram.com/me/media?fields=media_url, caption, timestamp&access_token=IGQVJVbVFsYnF1cDZA3VG5Yc3N6R2pZATnVHNk9WM00wUGY0YlNESUVsVXZAjamI4R05VY0pxdWY2eWN6bElNR0liVGxHcTdsWGI3ZAWxUOUZA5alc2ZAjh3T25lN3Y4NFBwVTljVUQ0RFZAR'
-        );
+    );
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             let reponse = JSON.parse(xhr.responseText);for (var i=0; i< reponse.data.length; i++)
@@ -45,10 +43,9 @@ function loadInstaCaption(token) {
             for (var i=0; i< reponse.data.length; i++)
             {
                 caption.push(reponse.data[i].caption);
-                document.getElementById("caption"+i).value=caption[i] ;
             }
             console.log(caption);
-            /*document.getElementById("caption").value=caption ;
+            document.getElementById("caption").value=caption ;
             document.getElementById("caption1").value=caption[0] ;
             document.getElementById("caption2").value=caption[1] ;
             document.getElementById("caption3").value=caption[2] ;
@@ -191,4 +188,3 @@ function loadInstatemps(token) {
     };
     xhr.send();
 }
-*/
