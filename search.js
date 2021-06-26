@@ -1,12 +1,11 @@
-
 function connecter(){
-    document.location.href = 'https://lucie-hulin.github.io/MediasSociaux/accueil.html';
-    var token =document.getElementById("token").value;
+    localStorage.token = document.getElementById("token").value;
 console.log(token);
-    loadInstaCaption(token);
+    window.location.pathname="/MediasSociauxPorjet/MediasSociauxProjet/accueil.html";
+    /*loadInstaCaption(token);
     loadInstaUsername(token);
     loadInstaMedia(token);
-    loadInstatemps(token);
+    loadInstatemps(token);*/
 }
 
 
@@ -32,7 +31,7 @@ console.log(token);
     };
     xhr.send();
 
-}*/
+}
 
 function loadInstaCaption(token) {
     localStorage.clear();
@@ -190,7 +189,7 @@ function loadInstatemps(token) {
         }
     };
     xhr.send();
-}
+}*/
 
 
 
