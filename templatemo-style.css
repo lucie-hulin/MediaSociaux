@@ -9,9 +9,26 @@
         box-sizing:border-box;
     }
 
-ul, nav, body, h1, h2, h4, h6, p, figure {
+ul, nav, body, h1, h2, h4, h6, figure {
     margin: 0;
     padding: 0;
+}
+
+img{
+    width : 250px;
+    height : 250px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+p{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a, button { transition: all 0.3s ease; }
@@ -893,5 +910,28 @@ input:focus::-moz-placeholder {
                                    padding-left: 10px;
                                }
 
+#button-submit{
+    background: url(http://4.bp.blogspot.com/-slkXXLUcxqg/VEQI-sJKfZI/AAAAAAAAAlA/9UtEyStfDHw/s1600/slider-arrow-right.png) no-repeat;
+    margin-left: -40px;
+    border-width: 0px;
+    width: 43px;
+    height: 45px;
+}
 
-   
+    body {
+        font-family:'Source Sans Pro', sans-serif;
+    }
+
+    input[type=text] {
+        border: none;
+        border-bottom: 2px solid darkolivegreen;}
+
+    input[type=button] {
+        background-color: #556e5a;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
